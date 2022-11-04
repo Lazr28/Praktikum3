@@ -11,7 +11,7 @@ Secara default fungsi `sep` akan menambahkan sepasi sebagai separatornya.
 
 Sedangkan untuk fungsi `string format` atau `format` adalah untuk formating style.
 
-untu formatting style yang kita pakai pada praktikum kali ini yaitu :
+untuk formatting style yang kita pakai pada praktikum kali ini yaitu :
  
 #### 1. Formatting dasar
  Formatting posisi kemungkinan adalah hal yang paling sering kita jumpai. Kita menggunakannya pada saat urutan dari argumen tidak ingin diubah, dan hanya ada sedikit elemen yang akan digabungkan. Metode formatting ini cocoknya adalah untuk memformat elemen yang jumlahnya sedikit.
@@ -52,9 +52,12 @@ Rata Kiri:
 --------  Output  --------
 test[][][][][][][][][][]
 ```
-> [ ] pada output diatas untuk merepresentasikan paddingnya. pada aktualnya tidak akan muncul [] tetapi akan terlihat seperti spasi / tab.
+> [ ] pada output diatas untuk merepresentasikan paddingnya. pada aktualnya tidak akan muncul [] tetapi akan terlihat seperti spasi atau tab.\
 
-## Latihan 1
+
+
+
+# Latihan 1
 Code :
 ```
 # penggunaan end
@@ -104,7 +107,33 @@ print('{0:>3} {1:>16}'.format(9, 10**9))
 print('{0:>3} {1:>16}'.format(10, 10**10))
 
 ```
-Output :
+>`print('A', end='')`\
+`print('B', end='')`\
+`print('C', end='')`\
+\
+ kode ini akan membuat output huruf A yang pada akhir perintah fungsi end nya di ubah menjadi kosong yang secara defaultnya akan merubah baris seperti kode berikut :\
+ \
+`print()`\
+`print('X')`\
+`print('V')`\
+`print('Z')`\
+\
+-------------------------------------------------------------------------------\
+`w, x, y, z = 10, 15, 20, 25`\
+Kode ini untuk mendefinisikan `w x y z` dan mengisi value dengan angka\
+ketika di run akan otomatis mengisi separator dengan sepasi\
+\
+`print(w, x, y, z, sep=',')`\
+`print(w, x, y, z, sep='')`\
+`print(w, x, y, z, sep=':')`\
+`print(w, x, y, z, sep='-----')`\
+\
+kode berikut untuk merubah separator menjadi yang kita inginkan.
+
+
+
+Output :\
+\
 !["Output Latihan 1](/Screenshot/SS-output-Lat1.png)
 
 
@@ -128,8 +157,12 @@ print("hasil penjumlahan {1}+{0}=%d".format(a,b) %(a+b))
 print("hasil pembagian {1}/{0}=%d".format(a,b) %(a/b))
 ```
 
-Output :
-![""Output Latihan 2](/Screenshot/SS-output-Lat2.png)
+Output :\
+
+![""Output Latihan 2](/Screenshot/SS-output-Lat2.png)\
+\
+
+
 
 ## Latihan 3
 Code :
@@ -144,5 +177,5 @@ print('{1:>17}'.format(0,"*****"))
 print('{1:>16}'.format(0,"***"))
 print('{1:>15}'.format(0,"*"))
 ```
-Output : 
+Output : \
 !["Output Latihan 3"](/Screenshot/SS-output-Lat3.png)
