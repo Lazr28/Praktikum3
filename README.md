@@ -128,7 +128,41 @@ ketika di run akan otomatis mengisi separator dengan sepasi\
 `print(w, x, y, z, sep=':')`\
 `print(w, x, y, z, sep='-----')`\
 \
-kode berikut untuk merubah separator menjadi yang kita inginkan.
+kode berikut untuk merubah separator menjadi yang kita inginkan.\
+-----------------------------------------------------------------------\
+`print(0, 10**0)`\
+`print(1, 10 **1)`\
+`print(2, 10 **2)`\
+`print(3, 10 **3)`\
+`print(4, 10 **4)`\
+`print(5, 10 **5)`\
+`print(6, 10**6)`\
+`print(7, 10**7)`\
+`print(8, 10**8)`\
+`print(9, 10**9)`\
+`print(10, 10**10)`\
+\
+kode diatas ini akan menampilkan angka 10 lalu dibaris selanjutnya di pangkat terus hingga pangkat 10\
+dan akan menampilkan rata kiri.\
+untuk membuatnya menjadi rata kanan\
+kita dapat menambahkan padding.\
+seperti code berikut :\
+`print('{0:>3}{1:>16}')`\
+lalu tambahkan format untuk menampilkan angka.\
+\
+`print('{0:>3} {1:>16}'.format(0, 10**0))`\
+`print('{0:>3} {1:>16}'.format(1, 10**1))`\
+`print('{0:>3} {1:>16}'.format(2, 10**2))`\
+`print('{0:>3} {1:>16}'.format(3, 10**3))`\
+`print('{0:>3} {1:>16}'.format(4, 10**4))`\
+`print('{0:>3} {1:>16}'.format(5, 10**5))`\
+`print('{0:>3} {1:>16}'.format(6, 10**6))`\
+`print('{0:>3} {1:>16}'.format(7, 10**7))`\
+`print('{0:>3} {1:>16}'.format(8, 10**8))`\
+`print('{0:>3} {1:>16}'.format(9, 10**9))`\
+`print('{0:>3} {1:>16}'.format(10, 10**10))`
+
+
 
 
 
@@ -156,14 +190,9 @@ b=int(b)
 print("hasil penjumlahan {1}+{0}=%d".format(a,b) %(a+b))
 print("hasil pembagian {1}/{0}=%d".format(a,b) %(a/b))
 ```
-
 Output :\
-
 ![""Output Latihan 2](/Screenshot/SS-output-Lat2.png)\
-\
-
-
-
+=-----------------------------------------------------------------=
 ## Latihan 3
 Code :
 ```
