@@ -176,7 +176,6 @@ Output :\
 Code :
 ```
 a=input("masukkan nilai a:")
-
 b=input("masukkan nilai b:")
 
 print("variable a=",a)
@@ -190,10 +189,31 @@ b=int(b)
 print("hasil penjumlahan {1}+{0}=%d".format(a,b) %(a+b))
 print("hasil pembagian {1}/{0}=%d".format(a,b) %(a/b))
 ```
+>`a=input("masukkan nilai a:")`\
+`b=input("masukkan nilai b:")`\
+kode diatas untuk memberi nilai dengan keyboard pada variabel `a` & `b`\
+`print("variable a=",a)` \
+`print("variable b=",b)`\
+kode diatas ini untuk menampilkan output  **variabel a=[isi variabel a]** begitu pula dengan variabel **b**\
+`print("hasil penggabungan {1}&{0}=%s".format(a,b) %(a+b))`\
+lalu kode ini untuk memformat dengan placeholder dan urutannya di atur agar angka pertama berasal dari variabel `b` lalu angka kedua dari variabel `a`\
+\
+`a=int(a)`\
+`b=int(b)`\
+kode ini untuk mengconvert variabel `a` dan `b` menjadi integer.\
+`print("hasil penjumlahan {1}+{0}=%d".format(a,b) %(a+b))`\
+`print("hasil pembagian {1}/{0}=%d".format(a,b) %(a/b))`\
+lalu kode ini untuk menjumlahkan dan membagi kedua variabel tersebut dan menggunakan formatting.
+
+\
 Output :\
 ![""Output Latihan 2](/Screenshot/SS-output-Lat2.png)\
-=-----------------------------------------------------------------=
+=---------------------------------------------------------------=
+
+
 ## Latihan 3
+Pada latihan ke3 ini kita diminta untuk membuat * yang membentuk diamond atau layang layang \
+kode yang saya gunakan seperti dibawah ini.\
 Code :
 ```
 print('{1:>15}'.format(0,"*"))
@@ -206,5 +226,36 @@ print('{1:>17}'.format(0,"*****"))
 print('{1:>16}'.format(0,"***"))
 print('{1:>15}'.format(0,"*"))
 ```
+> Saya menggunakan formmating padding untuk membuat tampilan menjadi layang layang atau diamond.
+
 Output : \
 !["Output Latihan 3"](/Screenshot/SS-output-Lat3.png)
+
+--------------------------------------------------------
+## Tugas Latihan
+
+Pada tugas latihan diminta untuk membuat program menghitung luas dan keliling lingkaran.
+
+code :
+```
+print("Menghitung luas dan keliling lingkaran")
+r = float(input("Masukkan panjang jari-jari lingkaran: "))
+phi = 3.14
+luas = phi*(r**2)
+keliling = (2*phi)*r
+print("Luas lingkaran adalah : ", str(luas))
+print("Keliling lingkaran adalah :", str(keliling))
+```
+> `r = float(input("Masukkan panjang jari-jari lingkaran: "))`\
+Sintaks ini untuk menginput panjang jari-jari lingkaran dengan type float pada variabel r.\
+lalu kita mendeklarasikan phi dengan sintaks `phi = 3.14`\
+dan mengoperasikan perhitungan dengan sintaks berikut :\
+`luas = phi*(r**2)`\
+`keliling = (2*phi)*r`
+
+maka output dari kode diatas akan jadi seperti ini :\
+!["Output"](/Screenshot/SS-output-LatTug.png)\
+\
+untuk flowchartnya seperti ini :
+\
+!["Flowchart luas keliling lingkaran"](/Flowchart%20Luas%20Keliling%20Lingkaran.png)
